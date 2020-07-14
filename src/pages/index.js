@@ -1,9 +1,14 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import qs from "querystring"
+import copy from "copy-to-clipboard"
 
-import SEO from "../components/SEO"
+import Button from "../components/Button"
 import Copy from "../images/copy.svg"
+import Input from "../components/Input"
+import Select from "../components/Select"
+import SEO from "../components/SEO"
+import { track } from "../utils"
 
 const GeneratedText = styled.div`
   background-color: white;
@@ -14,52 +19,6 @@ const GeneratedText = styled.div`
   max-width: 600px;
   padding: 40px;
   width: 90%;
-`
-
-const Input = styled.input`
-  -moz-appearance: textfield;
-  border: 2px solid black;
-  font-size: 16px;
-  height: 40px;
-  outline: none;
-  padding: 0 8px;
-  text-align: center;
-  width: 56px;
-
-  ::-webkit-outer-spin-button,
-  ::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-`
-
-const Select = styled.select`
-  -webkit-appearance: none;
-  border: 2px solid black;
-  cursor: pointer;
-  font-size: 16px;
-  height: 40px;
-  outline: none;
-  padding: 0 8px;
-  text-align-last: center;
-`
-
-const Button = styled.button`
-  align-items: center;
-  background-color: black;
-  border: 0;
-  color: white;
-  cursor: pointer;
-  display: inline-flex;
-  font-size: 16px;
-  height: 40px;
-  outline: none;
-  padding: 0 16px;
-
-  svg {
-    margin-left: 8px;
-    width: 16px;
-  }
 `
 
 const Control = styled.div`
@@ -83,16 +42,28 @@ const IndexPage = () => {
   const [type, setType] = useState("sentences")
   const [text, setText] = useState("")
 
+  const handleCopy = () => {
+    copy(text)
+    track("Copy to clipboard", { value: text })
+  }
+
   const handleGenerate = async () => {
     const response = await fetch(
       `/api/getRandomText?${qs.stringify({ type, value: number })}`
     ).then(res => res.text())
     setText(response)
+    track("Generate random text", { value: response })
   }
 
-  const handleNumberChange = ({ target }) => setNumber(target.value)
+  const handleNumberChange = ({ target }) => {
+    setNumber(target.value)
+    track("Number change", { value: target.value })
+  }
 
-  const handleTypeChange = ({ target }) => setType(target.value)
+  const handleTypeChange = ({ target }) => {
+    setType(target.value)
+    track("Type change", { value: target.value })
+  }
 
   return (
     <>
@@ -111,7 +82,7 @@ const IndexPage = () => {
           <option value="words">Words</option>
         </Select>
         <Button onClick={handleGenerate}>Generate</Button>
-        <Button>
+        <Button onClick={handleCopy}>
           Copy <Copy />
         </Button>
       </Control>
