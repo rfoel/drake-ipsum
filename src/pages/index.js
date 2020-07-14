@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
+import qs from "querystring"
 
 import SEO from "../components/SEO"
 import Copy from "../images/copy.svg"
@@ -83,7 +84,9 @@ const IndexPage = () => {
   const [text, setText] = useState("")
 
   const handleGenerate = async () => {
-    const response = await fetch("/api/getRandomText").then(res => res.text())
+    const response = await fetch(
+      `/api/getRandomText?${qs.stringify({ type, value: number })}`
+    ).then(res => res.text())
     setText(response)
   }
 
