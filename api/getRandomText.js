@@ -1,10 +1,8 @@
-import qs from "querystring"
-
 import { getParagraphs, getSentences, getWords } from "./utils"
 
 export default (req, res) => {
   const { query } = req
-  const { type, value } = qs.parse(query)
+  const { type, value } = query
 
   if (type === "words") {
     const words = getWords(Number(value))
