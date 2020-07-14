@@ -6,7 +6,7 @@ export const getParagraphs = n => {
     const sentences = getSentences(getRandomNumber())
     paragraphs.push(sentences)
   } while (paragraphs.length < n)
-  return paragraphs.join("\n\n")
+  return paragraphs.join("\n")
 }
 
 export const getRandomItem = array =>

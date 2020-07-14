@@ -25,6 +25,6 @@ describe("getRandomText response tests", () => {
     const text = mockRequest(getRandomText, {
       query: { type: "paragraphs", value: 3 },
     })
-    expect(text.split("\n\n").length).toBe(3)
+    expect(text.split("\n").length).toBe(3)
   })
 })
