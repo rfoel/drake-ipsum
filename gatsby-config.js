@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-svg`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-splitbee`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
