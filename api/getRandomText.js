@@ -7,14 +7,14 @@ export default (req, res) => {
   if (type === "words") {
     const words = getWords(Number(value))
     res.statusCode = 200
-    res.text(words)
+    res.send(words)
   } else if (type === "sentences") {
     const sentences = getSentences(Number(value))
     res.statusCode = 200
-    res.text(sentences)
+    res.send(sentences)
   } else if (type === "paragraphs") {
     const paragraphs = getParagraphs(Number(value))
     res.statusCode = 200
-    res.text(paragraphs)
+    res.send(paragraphs)
   }
 }

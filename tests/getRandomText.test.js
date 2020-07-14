@@ -2,7 +2,7 @@ import getRandomText from "../api/getRandomText"
 
 const mockRequest = (handler, req) => {
   let res
-  handler(req, { text: response => (res = response) })
+  handler(req, { send: response => (res = response) })
   return res
 }
 
