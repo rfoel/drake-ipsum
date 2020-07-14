@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { FeedbackForm } from "feedback-fish"
 
 const StyledFooter = styled.footer`
   font-family: "Playfair Display", serif;
@@ -10,7 +11,19 @@ const StyledFooter = styled.footer`
     color: currentColor;
     text-decoration: none;
   }
+
+  button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+  }
 `
+
+const SendFeedback = () => <button type="button">send feedback</button>
 
 const Footer = () => {
   return (
@@ -21,7 +34,14 @@ const Footer = () => {
         rfoel
       </a>
       {" | "}
-      <a href="https://github.com/rfoel/drake"> source code</a>
+      <a href="https://github.com/rfoel/drake" target="_blank" rel="noreferrer">
+        source code
+      </a>
+      {" | "}
+      <FeedbackForm
+        projectId="3786bf6e4716e5"
+        triggerComponent={SendFeedback}
+      />
     </StyledFooter>
   )
 }
