@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 
-import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Copy from "../images/copy.svg"
 
@@ -84,7 +83,7 @@ const IndexPage = () => {
   const handleNumberChange = ({ target }) => setNumber(target.value)
 
   return (
-    <Layout>
+    <>
       <SEO title="Home" />
       <Control>
         <Input
@@ -114,7 +113,7 @@ const IndexPage = () => {
         I'm just mobbin' like that. She said they miss the old Drake. Girl don't
         tempt me.
       </GeneratedText>
-    </Layout>
+    </>
   )
 }
 
