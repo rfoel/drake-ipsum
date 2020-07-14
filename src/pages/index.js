@@ -86,7 +86,11 @@ const IndexPage = () => {
           Copy <Copy />
         </Button>
       </Control>
-      <GeneratedText>{text}</GeneratedText>
+      <GeneratedText>
+        {text.split("\n").map((paragraph, i) => (
+          <p key={i}>{paragraph}</p>
+        ))}
+      </GeneratedText>
     </>
   )
 }
