@@ -34,7 +34,11 @@ const Footer = () => {
         rfoel
       </a>
       {" | "}
-      <a href="https://github.com/rfoel/drake" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/rfoel/drake-ipsum"
+        target="_blank"
+        rel="noreferrer"
+      >
         source code
       </a>
       {" | "}
