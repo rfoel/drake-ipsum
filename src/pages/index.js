@@ -40,7 +40,7 @@ const Select = styled.select`
   height: 40px;
   outline: none;
   padding: 0 8px;
-  text-align: center;
+  text-align-last: center;
 `
 
 const Button = styled.button`
@@ -79,8 +79,17 @@ const Control = styled.div`
 
 const IndexPage = () => {
   const [number, setNumber] = useState(3)
+  const [type, setType] = useState("sentences")
+  const [text, setText] = useState("")
+
+  const handleGenerate = async () => {
+    const response = await fetch("/api/getRandomText").then(res => res.text())
+    setText(response)
+  }
 
   const handleNumberChange = ({ target }) => setNumber(target.value)
+
+  const handleTypeChange = ({ target }) => setType(target.value)
 
   return (
     <>
@@ -93,26 +102,17 @@ const IndexPage = () => {
           value={number}
           type="number"
         />
-        <Select>
-          <option>Paragraphs</option>
-          <option>Sentences</option>
-          <option>Words</option>
+        <Select onChange={handleTypeChange} value={type}>
+          <option value="paragraphs">Paragraphs</option>
+          <option value="sentences">Sentences</option>
+          <option value="words">Words</option>
         </Select>
-        <Button>Generate</Button>
+        <Button onClick={handleGenerate}>Generate</Button>
         <Button>
           Copy <Copy />
         </Button>
       </Control>
-      <GeneratedText>
-        Started. October very's own but it looks like July 4. I know way too
-        many people here right now that I didn't know last year. I swear I could
-        beat Serena when she playing with her left. Oh yeah, that's right, I'm
-        doing me. I can you teach you how to speak my language, Rosetta Stone. I
-        was running through the 6 with my woes. I might be too strung out on
-        compliments, overdosed on confidence. Tuck my napkin in my shirt cause
-        I'm just mobbin' like that. She said they miss the old Drake. Girl don't
-        tempt me.
-      </GeneratedText>
+      <GeneratedText>{text}</GeneratedText>
     </>
   )
 }
