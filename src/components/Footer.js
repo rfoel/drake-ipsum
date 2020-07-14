@@ -23,7 +23,7 @@ const StyledFooter = styled.footer`
   }
 `
 
-const SendFeedback = () => <button type="button">send feedback</button>
+const SendFeedback = ({ props }) => <button {...props} type="button">send feedback</button>
 
 const Footer = () => {
   return (
