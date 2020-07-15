@@ -33,7 +33,7 @@
     "gatsby-plugin-sharp": "^2.6.14",
     "gatsby-plugin-splitbee": "^0.1.0",
     "gatsby-plugin-styled-components": "^3.3.10",
-    "gatsby-source-filesystem": "^2.3.14",
+    "gatsby-source-filesystem": "^2.3.19",
     "gatsby-transformer-sharp": "^2.5.11",
     "prop-types": "^15.7.2",
     "querystring": "^0.2.0",
