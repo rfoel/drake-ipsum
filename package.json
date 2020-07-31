@@ -46,7 +46,7 @@
   "devDependencies": {
     "babel-jest": "^26.2.2",
     "babel-preset-gatsby": "^0.5.2",
-    "jest": "^26.2.1",
+    "jest": "^26.2.2",
     "prettier": "2.0.5"
   }
 }
