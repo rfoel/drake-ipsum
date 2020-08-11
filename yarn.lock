@@ -7308,10 +7308,10 @@ gatsby-transformer-sharp@^2.5.12:
     semver "^5.7.1"
     sharp "^0.25.1"
 
-gatsby@^2.24.40:
-  version "2.24.40"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.40.tgz#afc1fe5b169c33d3de625bca714f10ad7a941454"
-  integrity sha512-8keaqWP7giwqmYQH6zBZAkQZKh4Jenvjei2GQ9sCIMkusV9//4NI3xzkOGBdiGTadDoZjfTwNMkwMdw4eYkOtA==
+gatsby@^2.24.41:
+  version "2.24.41"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.41.tgz#9a647d389838af5b178e5295d72acbebdde71a28"
+  integrity sha512-sEr/eiJKl9MQudgpOyBMgLDvUoZbQO3zIunn4+nSzkBEdDFrSDLNdUVuX3ojQV5230eA2phhARygFrgGjk9Crg==
   dependencies:
     "@babel/code-frame" "^7.10.3"
     "@babel/core" "^7.10.3"
