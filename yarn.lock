@@ -6922,10 +6922,10 @@ functions-have-names@^1.2.0:
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.1.tgz#a981ac397fa0c9964551402cdc5533d7a4d52f91"
   integrity sha512-j48B/ZI7VKs3sgeI2cZp7WXWmZXu7Iq5pl5/vptV5N2mq+DGFuS/ulaDjtaoLpYzuD6u8UgrUKHfgo7fDTSiBA==
 
-gatsby-cli@^2.12.83:
-  version "2.12.83"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.12.83.tgz#4c4751cd7b030b32f42d82e45a7ffa9d9ef57ec4"
-  integrity sha512-yq9WA2Mwkfu0S++AETN/p6qJ6moX1ah5R+m4WkDIKzuApPrMgDFjZUGt2lAPWvSSlk6WL13LcWkaoF9dzNiQOA==
+gatsby-cli@^2.12.84:
+  version "2.12.84"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.12.84.tgz#36a13e84aec6acdea02faa762159d9687c675112"
+  integrity sha512-szkxieavAp76zKv6AVltlI4eQ3JITIlPi6chy9Uh0CI4G7j3PQWYhNZcjy+70cYO2tNUgEEX7PNqN+/zoVWeXw==
   dependencies:
     "@babel/code-frame" "^7.10.3"
     "@hapi/joi" "^15.1.1"
@@ -7309,10 +7309,10 @@ gatsby-transformer-sharp@^2.5.13:
     semver "^7.3.2"
     sharp "^0.25.1"
 
-gatsby@^2.24.43:
-  version "2.24.43"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.43.tgz#002373991e71c7304d9d229a6925bdd1362526a4"
-  integrity sha512-S/+UDTOmQP3XqQkq3PjeEyneIu0jV4WC802QamlCAxnc1CRBpVyKMk6lq9Top6tMDZM3DtxszWHXqbC/O7uiQg==
+gatsby@^2.24.44:
+  version "2.24.44"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.44.tgz#fdbccf43fef6dacd08ccb2be711829428e47020f"
+  integrity sha512-JjigXDxhhpGQUY5svqQkxvJGBaPoTZlYjZRIsjO8RULrkoDME+l+TxwXI+Gv2GhZNDCeUp4zjfLtkCgVMVwRAw==
   dependencies:
     "@babel/code-frame" "^7.10.3"
     "@babel/core" "^7.10.3"
@@ -7375,7 +7375,7 @@ gatsby@^2.24.43:
     find-cache-dir "^3.3.1"
     fs-exists-cached "1.0.0"
     fs-extra "^8.1.0"
-    gatsby-cli "^2.12.83"
+    gatsby-cli "^2.12.84"
     gatsby-core-utils "^1.3.15"
     gatsby-graphiql-explorer "^0.4.12"
     gatsby-legacy-polyfills "^0.0.2"
