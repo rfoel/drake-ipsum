@@ -6579,10 +6579,10 @@ fd@~0.0.2:
   resolved "https://registry.yarnpkg.com/fd/-/fd-0.0.3.tgz#b3240de86dbf5a345baae7382a07d4713566ff0c"
   integrity sha512-iAHrIslQb3U68OcMSP0kkNWabp7sSN6d2TBSb2JO3gcLJVDd4owr/hKM4SFJovFOUeeXeItjYgouEDTMWiVAnA==
 
-feedback-fish@^0.1.12:
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/feedback-fish/-/feedback-fish-0.1.12.tgz#e81e33c4344d87a08622c2dcaf753858976885d2"
-  integrity sha512-aew/b5jQtaE+L3wCLuyjD/1qSMPX+r5TFKWsbBO262xRPG19ZERprMwVjeJmO60OPwOeEqWCYtcoj1MxSPHnVg==
+feedback-fish@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/feedback-fish/-/feedback-fish-0.2.2.tgz#efa98b8018b7ad2d5afaecb7250a234236dbe578"
+  integrity sha512-w/+dVRpNoELqwNBmhrtfodkXXZeCAMSyOseR6U2Hh2lyEMvpdkgNrRPAD0GeJ21NQbA/FiYdcYzuJR/equJJmg==
   dependencies:
     "@popperjs/core" "2.x"
     "@theme-ui/preset-tailwind" "0.3.x"
