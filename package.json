@@ -23,8 +23,8 @@
   },
   "dependencies": {
     "copy-to-clipboard": "^3.3.1",
-    "feedback-fish": "^0.1.12",
-    "gatsby": "^2.24.66",
+    "feedback-fish": "^0.2.3",
+    "gatsby": "^2.24.67",
     "gatsby-image": "^2.4.20",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.4.33",
