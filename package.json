@@ -44,7 +44,7 @@
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
-    "babel-jest": "^26.3.0",
+    "babel-jest": "^27.4.6",
     "babel-preset-gatsby": "^0.5.12",
     "jest": "^26.4.2",
     "prettier": "2.1.2"
